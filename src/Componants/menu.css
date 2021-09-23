@@ -1,0 +1,215 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+div.navbar.active{
+    position: relative ;
+    display: block;
+    height: 100vh;
+    width: 70px;
+    overflow: hidden;
+    box-shadow: 0px 0 10px white;
+    transition: width 0.5s;
+}
+div.navbar{ 
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 200px;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    box-shadow: 0px 0 10px white;
+    background-color: rgba(7, 7, 7, 0.5);
+    transition: width 0.5s;
+}
+a.brand{
+    text-decoration: none;
+    color: white;
+}
+.navbar-brand.active{
+    position: absolute;
+    top: 25px;
+    left:75px;
+    font-size: 25px;
+    text-align: center;
+    transition: left 0.5s;
+}
+.navbar-brand{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 25px;
+    text-align: center;
+    transition: left 0.5s;
+}
+.navbar-brand:hover{
+    transition: transform 0.5s linear;
+    transform: scale(2);
+}
+.items-list{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 100px;
+    left: 15px;
+}
+.items-list.active{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 100px;
+    left: 15px;
+}
+.navbar-item{
+    display: flex;
+    font-size: 25px;
+    color: white;
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 5px;
+}
+.navbar-item:hover{
+    background-color: white;
+    color: #282c34;
+    border-radius: 3px;
+}
+.navbar-item.active{
+   width: 100%;
+}
+i.bx{
+    margin: 0 10px 0 0;
+}
+i.bi{
+    margin: 0 5px 0 0;
+}
+a.navbar-item{
+    text-decoration: none;
+}
+.item-name.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.item-name{
+    opacity: 0;
+    pointer-events: none;
+}
+.navbar-item:nth-child(9){
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: -30%;
+}
+.navbar-item.active:nth-child(9){
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: -30%;
+}
+.menubtn{
+    display: none;
+}
+
+/* ////////////////////   Small screen view ////////////////////// */
+
+@media only screen and (max-width: 1400px) {
+    div.navbar {
+        position: relative;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        height: 90vh;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    div.navbar.active {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        left: 0;
+    }
+    .navbar-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .items-list{
+        display: flex;
+        left: 28.4%;
+    }
+    .item-name.active{
+        display: block;
+    }
+    .items-list.active{
+        display: flex;
+        left: 28.4%;
+        width: 100%;
+    }
+    .navbar-brand{
+        position: absolute;
+        font-size: 50px;
+        padding: 0;
+        left: 30px;
+        top: 24px;
+    }
+    .navbar-brand:hover{
+        transform: none;
+        transition: none;
+    }
+    .navbar-brand.active{
+        position: absolute;
+        font-size: 50px;
+        margin: 0;
+        padding: 0;
+        left: 30px;
+        top: 24px;
+    }
+    .navbar-item:nth-child(8){
+        display: none;
+        opacity: none;
+        pointer-events: none;
+    }
+    .navbar-item.active:nth-child(9){
+        position: static;
+    }
+    button.menubtn{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        border: 2px solid white;
+        border-radius: 20px;
+        background: transparent;
+        color: white;
+        top: 24px;
+        right: 30px;
+    }
+    button.menubtn.active{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        border: 2px solid white;
+        border-radius: 20px;
+        background: transparent;
+        color: white;
+        top: 24px;
+        right: 30px;
+    }
+    .bi.bi-chevron-bar-expand{
+        font-size: 40px;
+        margin: 0 !important;
+    }
+    .bi.bi-chevron-bar-contract{
+        font-size: 40px;
+        margin: 0 !important;
+    }
+
+    
+  }

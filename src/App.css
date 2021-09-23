@@ -1,0 +1,35 @@
+.grid-container{
+  display: flex;
+  position: relative;
+}
+.item1{
+  position: fixed;
+  height: auto;
+}
+.item2{
+  position:absolute;
+  z-index: -1;
+  left: 70px;
+  height: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .grid-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 105vw;
+    height: 100vh;
+  }
+  .item1{
+    position: sticky;
+    width: auto;
+
+  }
+  .item2{
+    width: 100%;
+    top: 15%;
+    left: 0;
+    
+  }
+}
